@@ -2,9 +2,6 @@ public class Piano implements InstrumentInterface{
     private InstrumentFeatures pianoFeatures;
 
 
-//    Constructor
-
-
     public Piano(InstrumentFeatures pianoFeatures) {
         this.pianoFeatures = pianoFeatures;
     }
