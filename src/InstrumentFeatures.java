@@ -7,9 +7,6 @@ public class InstrumentFeatures {
     private int fret;
 
 
-//    Constructor for guitar class
-
-
     public InstrumentFeatures(String model, String color, int pickup, int knobs, int fret) {
         this.model = model;
         this.color = color;
@@ -19,16 +16,11 @@ public class InstrumentFeatures {
     }
 
 
-//    Constructor for piano class
-
     public InstrumentFeatures (String model, String color, int octave) {
         this.model = model;
         this.color = color;
         this.octave = octave;
     }
-
-
-//    Setters and Getters
 
 
     public String getModel() {
@@ -78,9 +70,6 @@ public class InstrumentFeatures {
     public void setFret(int fret) {
         this.fret = fret;
     }
-
-
-//    toString method
 
 
     @Override

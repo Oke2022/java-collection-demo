@@ -1,13 +1,10 @@
 public class Guitar {
     private InstrumentFeatures guitarFeatures;
 
-//    Constructor
 
     public Guitar (InstrumentFeatures guitarFeatures){
         this.guitarFeatures =guitarFeatures;
     }
-
-//    Setters and Getters
 
     public InstrumentFeatures getGuitarFeatures() {
         return guitarFeatures;
