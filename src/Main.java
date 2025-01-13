@@ -10,7 +10,6 @@ public class Main {
     Guitar Fender = new Guitar(new InstrumentFeatures("Fender", "Wine" , 2 , 2, 24 ));
 
     StageFeatures myStageFeatures = new StageFeatures();
-
     myStageFeatures.addPiano(Yamaha);
     myStageFeatures.addGuitar(Gibson);
     myStageFeatures.addPiano(Nord);

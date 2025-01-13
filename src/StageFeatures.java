@@ -42,4 +42,5 @@ public class StageFeatures {
                     ", guitars=" + moreGuitar +
                     '}';
         }
+
 }
