@@ -1,3 +1,5 @@
+package com.example.models;
+
 public class Piano implements InstrumentInterface{
     private InstrumentFeatures pianoFeatures;
 
