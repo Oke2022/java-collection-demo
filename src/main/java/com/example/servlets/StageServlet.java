@@ -1,10 +1,16 @@
 package com.example.servlets;
 
-import com.example.models.*;
-import jakarta.servlet.*;
-import jakarta.servlet.http.*;
+import com.example.models.Stage;
+import com.example.models.Guitar;
+import com.example.models.InstrumentFeatures;
+import com.example.models.Piano;
+import com.example.models.StageFeatures;
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 
 public class StageServlet extends HttpServlet {
@@ -26,8 +32,8 @@ public class StageServlet extends HttpServlet {
         Stage stage = new Stage(myStageFeatures);
 
 
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        out.println("<html><body><h1> Stage Object</h1> <prev>" + stage + "</body></html>");
+        request.setAttribute("stage" , stage);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("stage.jsp");
+        dispatcher.forward(request, response);
     }
 }
