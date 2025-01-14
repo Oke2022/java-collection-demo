@@ -1,4 +1,6 @@
-package com.example.models;
+package  com.example.tests;
+
+import com.example.models.*;
 
 
 public class Main {
@@ -17,7 +19,7 @@ public class Main {
     myStageFeatures.addPiano(Nord);
     myStageFeatures.addGuitar(Fender);
 
-    Stage stage = new Stage();
+    Stage stage = new Stage(myStageFeatures);
     stage.setStage(myStageFeatures);
     }
 }

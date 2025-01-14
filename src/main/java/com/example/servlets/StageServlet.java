@@ -1,18 +1,18 @@
 package com.example.servlets;
 
 import com.example.models.*;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+//import jakarta.servlet.http.HttpServlet;
+//import jakarta.servlet.http.HttpServletRequest;
+//import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
-
+//@WebServlet("/")
 public class StageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html");
-        response.getWriter().println("<h1>Hello, Jakarta Servlet!</h1>");
 
         Piano Yamaha = new Piano(new InstrumentFeatures("Yamaha", "Black", 5));
         Guitar Gibson = new Guitar(new InstrumentFeatures("Gibson", "Cream", 2, 4, 23));
@@ -26,7 +26,11 @@ public class StageServlet extends HttpServlet {
         myStageFeatures.addPiano(Nord);
         myStageFeatures.addGuitar(Fender);
 
-        Stage stage = new Stage();
-        stage.setStage(myStageFeatures);
+        Stage stage = new Stage(myStageFeatures);
+
+
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+        out.println("<html><body><h1> Stage Object</h1> <prev>" + stage + "</body></html>");
     }
 }

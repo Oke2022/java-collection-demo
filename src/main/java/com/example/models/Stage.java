@@ -6,7 +6,7 @@ public class Stage {
 
 
 
-    public  Stage (){
+    public  Stage (StageFeatures mySetUp){
         this.mySetUp = mySetUp;
     }
 
