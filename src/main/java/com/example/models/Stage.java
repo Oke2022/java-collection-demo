@@ -2,25 +2,27 @@ package com.example.models;
 
 public class Stage {
 
-    private StageFeatures mySetUp;
+    private StageFeatures stageFeatures;
 
 
 
-    public  Stage (StageFeatures mySetUp){
-        this.mySetUp = mySetUp;
+    public  Stage (){
+        this.stageFeatures = stageFeatures;
     }
 
 
-    public void setStage(StageFeatures mySetUp) {
-        this.mySetUp = mySetUp;
-        System.out.println(mySetUp);
+    public void setStage(StageFeatures stageFeatures) {
+        this.stageFeatures = stageFeatures;
     }
 
+    public StageFeatures getStageFeatures() {
+        return stageFeatures;
+    }
 
     @Override
     public String toString() {
         return "Stage{" +
-                "stage=" + mySetUp +
+                "stage=" + stageFeatures +
                 '}';
     }
 }

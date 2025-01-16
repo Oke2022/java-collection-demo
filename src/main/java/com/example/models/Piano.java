@@ -8,6 +8,15 @@ public class Piano implements InstrumentInterface{
         this.pianoFeatures = pianoFeatures;
     }
 
+
+    public InstrumentFeatures getPianoFeatures() {
+        return pianoFeatures;
+    }
+
+    public void setPianoFeatures(InstrumentFeatures pianoFeatures) {
+        this.pianoFeatures = pianoFeatures;
+    }
+
     @Override
     public void isPlaying() {
         System.out.println

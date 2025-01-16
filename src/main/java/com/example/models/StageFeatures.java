@@ -4,44 +4,56 @@ import java.util.ArrayList;
 
 public class StageFeatures {
 
-        private ArrayList<Piano> morePiano;
-        private ArrayList<Guitar> moreGuitar;
+        private ArrayList<Piano> pianoList;
+        private ArrayList<Guitar> guitarList;
 
 
         public StageFeatures() {
-            this.morePiano = new ArrayList<>();
-            this.moreGuitar = new ArrayList<>();
+            this.pianoList = new ArrayList<>();
+            this.guitarList = new ArrayList<>();
         }
 
+
+
         public void addPiano(Piano piano) {
-            morePiano.add(piano);
+            pianoList.add(piano);
         }
 
         public void addGuitar(Guitar guitar) {
-            moreGuitar.add(guitar);
+            guitarList.add(guitar);
         }
 
         public void removePiano(Piano piano) {
-            morePiano.remove(piano);
+            pianoList.remove(piano);
         }
 
         public void removeGuitar(Guitar guitar) {
-            moreGuitar.remove(guitar);
+            guitarList.remove(guitar);
         }
 
-        public ArrayList<Piano> getMorePiano() {
-            return morePiano;
+    public void setPianoList(ArrayList<Piano> pianoList) {
+        this.pianoList = pianoList;
+    }
+
+    public void setGuitarList(ArrayList<Guitar> guitarList) {
+        this.guitarList = guitarList;
+    }
+
+    public ArrayList<Piano> getPianoList() {
+            return pianoList;
         }
 
-        public ArrayList<Guitar> getMoreGuitar() {
-            return moreGuitar;
+        public ArrayList<Guitar> getGuitarList() {
+            return guitarList;
         }
+
+
 
         @Override
         public String toString() {
             return "StageFeatures{" +
-                    "pianos=" + morePiano +
-                    ", guitars=" + moreGuitar +
+                    "pianos=" + pianoList +
+                    ", guitars=" + guitarList +
                     '}';
         }
 
