@@ -1,3 +1,5 @@
+package com.example.models;
+
 public class Guitar {
     private InstrumentFeatures guitarFeatures;
 
@@ -16,7 +18,7 @@ public class Guitar {
 
     @Override
     public String toString() {
-        return "Guitar{" +
+        return "com.example.models.Guitar{" +
                 "guitarFeatures=" + guitarFeatures +
                 '}';
     }

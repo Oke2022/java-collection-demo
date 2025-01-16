@@ -27,3 +27,13 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+
+### smarttomcat ###
+.smarttomcat
+
+### idea ###
+.idea
+
+### target folder ###
+target

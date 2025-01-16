@@ -1,3 +1,5 @@
+package com.example.models;
+
 public class InstrumentFeatures {
     private  String model;
     private String color;
@@ -72,9 +74,11 @@ public class InstrumentFeatures {
     }
 
 
+
+
     @Override
     public String toString() {
-        return "InstrumentFeatures{" +
+        return "com.example.models.InstrumentFeatures{" +
                 "model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", knobs=" + knobs +
